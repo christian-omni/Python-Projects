@@ -13,7 +13,7 @@ def list_docx_files(folder):
 def apply_title_style(doc, title_text):
     """Insert title with preferred Word style."""
     paragraph = doc.add_paragraph(title_text)
-    for style_choice in ['Heading 1', 'Title']:
+    for style_choice in ['Title', 'Heading 1']:
         try:
             paragraph.style = style_choice
             break
