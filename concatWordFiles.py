@@ -4,7 +4,7 @@ from docx import Document
 from tqdm import tqdm
 
 def list_docx_files(folder):
-    """Return sorted list of .docx file names in folder. test"""
+    """Return sorted list of .docx file names in folder."""
     return sorted([
         f for f in os.listdir(folder)
         if f.lower().endswith('.docx') and os.path.isfile(os.path.join(folder, f))
