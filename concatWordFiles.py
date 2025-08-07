@@ -67,3 +67,6 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     merge_word_files(args.folder, list_only=args.list, progress_unit=args.unit)
+
+
+    
